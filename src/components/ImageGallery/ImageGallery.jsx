@@ -13,8 +13,7 @@ const ImageGallery = ({ gallery, onModalShow }) => {
                         preview={webformatURL}
                         largeImage={largeImageURL}
                         tags={tags}
-                        //!
-                        onModalShow={() => onModalShow({largeImageURL, tags})}
+                        onModalShow={onModalShow}
                     />
                 );
             })}

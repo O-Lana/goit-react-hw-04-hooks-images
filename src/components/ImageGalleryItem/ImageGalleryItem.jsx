@@ -7,7 +7,7 @@ const ImageGalleryItem = ({preview, largeImage, tags, onModalShow}) => {
             <img
                 src={preview}
                 alt={tags}
-                //! onClick={() => onModalShow(largeImage)}
+                onClick={() => onModalShow(largeImage)}
                 className="imageGalleryItem-image"
             />
         </li>
@@ -21,5 +21,5 @@ ImageGalleryItem.propTypes = {
     tags: PropTypes.string.isRequired,
     preview: PropTypes.string.isRequired,
     largeImage: PropTypes.string.isRequired,
-    // onModalShow: PropTypes.func.isRequired,
+    onModalShow: PropTypes.func.isRequired,
 };
